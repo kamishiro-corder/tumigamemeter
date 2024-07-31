@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記録の入力</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>積みゲーメーター</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="report.html">プレイ記録の入力</a></li>
+            <li><a href="chart.html">プレイ時間グラフ表示</a></li>
+            <li><a href="newreport.html">ゲームの新規登録</a></li>
+            <li><a href="delete.html">ゲームの削除</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>記録の入力</h2>
+        <form id="play-newreport-form">
+            <label for="newgame-name">ゲーム名:</label>
+            <input type="text" id="newgame-name" name="newgame-name" required>
+            <label for="clear-time">クリア時間目安 (時間):</label>
+            <input type="number" id="clear-time" required>
+            <button type = "submit">追加</button>
+            <br> ジャンル別クリア時間目安
+            <li>RPG：30~60時間</li>
+            <li>アクション:20~30時間</li>
+            <li>アドベンチャー：15~25時間</li>
+            <br><a href ="https://howlongtobeat.com/" target="_blank">クリア時間が分かるサイト「HowLongToBeat.com」はこちら</a>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 積みゲーメーター</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

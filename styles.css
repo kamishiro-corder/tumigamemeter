@@ -1,0 +1,39 @@
+/* 全体のレイアウト設定 */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #5a58dd;
+    color: white;
+    padding: 1em;
+}
+
+
+main {
+    flex: 1;
+    padding-bottom: 50px; /* フッターの高さ分の余白を追加 */
+}
+
+footer {
+    height: 10px; /* フッターの高さを指定 */
+    background-color: #5a58dd;
+    color: white;
+    text-align: center;
+    line-height: 0px;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

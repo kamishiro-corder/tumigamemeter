@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プレイ時間グラフ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>積みゲーメーター</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="report.html">プレイ記録の入力</a></li>
+            <li><a href="chart.html">プレイ時間グラフ表示</a></li>
+            <li><a href="newreport.html">ゲームの新規登録</a></li>
+            <li><a href="delete.html">ゲームの削除</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>プレイ時間の推移グラフ</h2>
+        <label for="select-game-chart">ゲームを選択:</label>
+        <select id="select-game-chart" name="select-game-chart" required></select>
+        <canvas id="playTimeChart" width="400" height="200"></canvas>
+    </main>
+    <footer>
+        <p>&copy; 2024 積みゲーメーター</p>
+    </footer>
+    <script src="chart.js"></script>
+</body>
+</html>

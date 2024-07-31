@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホーム画面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>積みゲーメーター</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">ホーム</a></li>
+            <li><a href="report.html">プレイ記録の入力</a></li>
+            <li><a href="chart.html">プレイ時間グラフ表示</a></li>
+            <li><a href="newreport.html">ゲームの新規登録</a></li>
+            <li><a href="delete.html">ゲームの削除</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>ゲームプレイ記録をつけて、積みゲーゼロを目指しましょう！</h2>
+        <p>このサイトでは、ゲームプレイ記録を入力し、管理することができます。</p>
+        <p>プレイ記録を管理して、積みゲーゼロを目指しましょう！</p>
+        <h3>積みゲーメーターでできること</h3>
+        <li>現在プレイしているゲームを記録して管理。</li>
+        <li>ゲームごとにプレイ時間をグラフで可視化。</li>
+        <li>クリア時間目安を入力することで、おおまかな進行度を把握。</li>
+        <p>まずは「ゲームの新規登録」をクリックして、ゲーム情報を追加してみましょう！</p>
+    <h1>ゲーム一覧</h1>
+    <table id="game-records-table" border="1">
+        <thead>
+            <tr>
+                <th>ゲーム名</th>
+                <th>最後にプレイした日</th>
+                <th>プレイ時間 (時間)</th>
+                <th>総プレイ時間 (時間)</th>
+                <th>クリア時間目安(時間)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JavaScriptで行を追加 -->
+        </tbody>
+    </table>
+    </main>
+    <footer>
+        <p>&copy; 2024 積みゲーメーター</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
